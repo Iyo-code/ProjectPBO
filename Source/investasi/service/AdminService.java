@@ -45,7 +45,8 @@ public class AdminService {
                     clearScreen();
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid.");
+                    System.out.println("❌ Pilihan tidak valid.");
+                    pause();
             }
         }
     }
@@ -64,10 +65,18 @@ public class AdminService {
             scanner.nextLine();
 
             switch (pilihan) {
-                case 1: tambahSaham(); break;
-                case 2: ubahHargaSaham(); break;
-                case 3: ulang = false; break;
-                default: System.out.println("Pilihan tidak valid.");
+                case 1:
+                    tambahSaham();
+                    break;
+                case 2:
+                    ubahHargaSaham();
+                    break;
+                case 3:
+                    ulang = false;
+                    break;
+                default:
+                    System.out.println("❌ Pilihan tidak valid.");
+                    pause();
             }
         }
     }
@@ -83,11 +92,13 @@ public class AdminService {
 
         daftarSaham.add(new Saham(kode, nama, harga));
         System.out.println("✅ Saham berhasil ditambahkan!");
+        pause();
     }
 
     private void ubahHargaSaham() {
         if (daftarSaham.isEmpty()) {
             System.out.println("Belum ada saham.");
+            pause();
             return;
         }
 
@@ -108,8 +119,9 @@ public class AdminService {
             daftarSaham.get(index).setHarga(harga);
             System.out.println("✅ Harga saham diperbarui!");
         } else {
-            System.out.println("Pilihan tidak valid.");
+            System.out.println("❌ Pilihan tidak valid.");
         }
+        pause();
     }
 
     private void kelolaSBN() {
@@ -125,9 +137,15 @@ public class AdminService {
             scanner.nextLine();
 
             switch (pilihan) {
-                case 1: tambahSBN(); break;
-                case 2: ulang = false; break;
-                default: System.out.println("Pilihan tidak valid.");
+                case 1:
+                    tambahSBN();
+                    break;
+                case 2:
+                    ulang = false;
+                    break;
+                default:
+                    System.out.println("❌ Pilihan tidak valid.");
+                    pause();
             }
         }
     }
@@ -148,5 +166,11 @@ public class AdminService {
 
         daftarSBN.add(new SuratBerhargaNegara(nama, bunga, jangkaWaktu, jatuhTempo, kuota));
         System.out.println("✅ SBN berhasil ditambahkan!");
+        pause();
+    }
+
+    private void pause() {
+        System.out.println("\nTekan ENTER untuk melanjutkan...");
+        scanner.nextLine();
     }
 }
