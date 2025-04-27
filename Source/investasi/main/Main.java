@@ -4,11 +4,14 @@ import investasi.model.User;
 import java.util.Scanner;
 
 public class Main {
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         while (true) {
-            tampilkanHeader();
+            clearScreen();
+            printHeader("APLIKASI INVESTASI CLI", "🟢");
+
             System.out.print("Username: ");
             String username = scanner.nextLine();
             System.out.print("Password: ");
@@ -27,10 +30,26 @@ public class Main {
         }
     }
 
-    private static void tampilkanHeader() {
-        System.out.println("====================================");
-        System.out.println("🟢 APLIKASI INVESTASI SEDERHANA CLI ");
-        System.out.println("====================================");
+    public static void clearScreen() {
+        try {
+            if (System.getProperty("os.name").contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+            }
+        } catch (Exception e) {
+            System.out.println("Tidak bisa membersihkan layar.");
+        }
+    }
+
+    public static void printHeader(String title, String emoji) {
+        int width = 38;
+        String fullTitle = emoji + " " + title;
+        int padding = (width - fullTitle.length()) / 2;
+        System.out.println("=".repeat(width));
+        System.out.printf("|%" + (padding + fullTitle.length()) + "s%" + (width - padding - fullTitle.length()) + "s|\n", fullTitle, "");
+        System.out.println("=".repeat(width));
     }
 
     private static User login(String username, String password) {
