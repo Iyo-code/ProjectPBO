@@ -6,6 +6,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static investasi.main.Main.clearScreen;
+import static investasi.main.Main.printHeader;
+
 public class AdminService {
     private ArrayList<Saham> daftarSaham;
     private ArrayList<SuratBerhargaNegara> daftarSBN;
@@ -20,19 +23,29 @@ public class AdminService {
     public void menuAdmin() {
         boolean running = true;
         while (running) {
-            System.out.println("\n=== Menu Admin ===");
+            clearScreen();
+            printHeader("MENU ADMIN", "🧑‍💼");
+
             System.out.println("1. Kelola Saham");
             System.out.println("2. Kelola SBN");
             System.out.println("3. Logout");
             System.out.print("Pilih: ");
             int pilihan = scanner.nextInt();
-            scanner.nextLine(); // buang newline
+            scanner.nextLine();
 
             switch (pilihan) {
-                case 1 : kelolaSaham();
-                case 2 : kelolaSBN();
-                case 3 : running = false;
-                default : System.out.println("Pilihan tidak valid.");
+                case 1:
+                    kelolaSaham();
+                    break;
+                case 2:
+                    kelolaSBN();
+                    break;
+                case 3:
+                    running = false;
+                    clearScreen();
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid.");
             }
         }
     }
@@ -40,7 +53,9 @@ public class AdminService {
     private void kelolaSaham() {
         boolean ulang = true;
         while (ulang) {
-            System.out.println("\n--- Menu Saham ---");
+            clearScreen();
+            printHeader("KELOLA SAHAM", "📈");
+
             System.out.println("1. Tambah Saham");
             System.out.println("2. Ubah Harga Saham");
             System.out.println("3. Kembali");
@@ -49,10 +64,10 @@ public class AdminService {
             scanner.nextLine();
 
             switch (pilihan) {
-                case 1 : tambahSaham();
-                case 2 : ubahHargaSaham();
-                case 3 : ulang = false;
-                default : System.out.println("Pilihan tidak valid.");
+                case 1: tambahSaham(); break;
+                case 2: ubahHargaSaham(); break;
+                case 3: ulang = false; break;
+                default: System.out.println("Pilihan tidak valid.");
             }
         }
     }
@@ -71,31 +86,38 @@ public class AdminService {
     }
 
     private void ubahHargaSaham() {
+        if (daftarSaham.isEmpty()) {
+            System.out.println("Belum ada saham.");
+            return;
+        }
+
         System.out.println("Daftar Saham:");
         for (int i = 0; i < daftarSaham.size(); i++) {
             System.out.println((i + 1) + ". " + daftarSaham.get(i));
         }
 
-        System.out.print("Pilih nomor saham yang ingin diubah: ");
+        System.out.print("Pilih saham: ");
         int index = scanner.nextInt() - 1;
         scanner.nextLine();
 
         if (index >= 0 && index < daftarSaham.size()) {
             System.out.print("Harga baru: ");
-            double hargaBaru = scanner.nextDouble();
+            double harga = scanner.nextDouble();
             scanner.nextLine();
 
-            daftarSaham.get(index).setHarga(hargaBaru);
-            System.out.println("✅ Harga saham berhasil diperbarui!");
+            daftarSaham.get(index).setHarga(harga);
+            System.out.println("✅ Harga saham diperbarui!");
         } else {
-            System.out.println("❌ Nomor tidak valid.");
+            System.out.println("Pilihan tidak valid.");
         }
     }
 
     private void kelolaSBN() {
         boolean ulang = true;
         while (ulang) {
-            System.out.println("\n--- Menu SBN ---");
+            clearScreen();
+            printHeader("KELOLA SBN", "🏦");
+
             System.out.println("1. Tambah SBN");
             System.out.println("2. Kembali");
             System.out.print("Pilih: ");
@@ -103,9 +125,9 @@ public class AdminService {
             scanner.nextLine();
 
             switch (pilihan) {
-                case 1 : tambahSBN();
-                case 2 : ulang = false;
-                default : System.out.println("Pilihan tidak valid.");
+                case 1: tambahSBN(); break;
+                case 2: ulang = false; break;
+                default: System.out.println("Pilihan tidak valid.");
             }
         }
     }
@@ -120,7 +142,7 @@ public class AdminService {
         scanner.nextLine();
         System.out.print("Tanggal Jatuh Tempo (YYYY-MM-DD): ");
         LocalDate jatuhTempo = LocalDate.parse(scanner.nextLine());
-        System.out.print("Kuota Nasional (Rp): ");
+        System.out.print("Kuota Nasional: ");
         double kuota = scanner.nextDouble();
         scanner.nextLine();
 
