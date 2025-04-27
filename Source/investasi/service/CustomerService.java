@@ -5,6 +5,8 @@ import investasi.model.SuratBerhargaNegara;
 import investasi.model.User;
 
 import java.util.*;
+import static investasi.main.Main.clearScreen;
+import static investasi.main.Main.printHeader;
 
 public class CustomerService {
     private User user;
@@ -25,7 +27,9 @@ public class CustomerService {
     public void menuCustomer() {
         boolean ulang = true;
         while (ulang) {
-            System.out.println("\n=== Menu Customer ===");
+            clearScreen();
+            printHeader("MENU CUSTOMER", "👤");
+
             System.out.println("1. Beli Saham");
             System.out.println("2. Jual Saham");
             System.out.println("3. Beli SBN");
@@ -37,23 +41,14 @@ public class CustomerService {
             scanner.nextLine();
 
             switch (pilihan) {
-                case 1:
-                    beliSaham();
-                    break;
-                case 2:
-                    jualSaham();
-                    break;
-                case 3:
-                    beliSBN();
-                    break;
-                case 4:
-                    simulasiSBN();
-                    break;
-                case 5:
-                    tampilkanPortofolio();
-                    break;
+                case 1: beliSaham(); break;
+                case 2: jualSaham(); break;
+                case 3: beliSBN(); break;
+                case 4: simulasiSBN(); break;
+                case 5: tampilkanPortofolio(); break;
                 case 6:
                     ulang = false;
+                    clearScreen();
                     break;
                 default:
                     System.out.println("Pilihan tidak valid.");
