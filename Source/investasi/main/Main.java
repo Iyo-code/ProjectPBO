@@ -7,10 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String loginError = "";
 
         while (true) {
             clearScreen();
             printHeader("APLIKASI INVESTASI CLI", "🟢");
+
+            if (!loginError.isEmpty()) {
+                System.out.println(loginError);
+                System.out.println();
+                loginError = "";
+            }
 
             System.out.print("Username: ");
             String username = scanner.nextLine();
@@ -25,30 +32,28 @@ public class Main {
                     new CustomerMenu(loginUser).show();
                 }
             } else {
-                System.out.println("Login gagal.");
+                loginError = "❌ Login gagal: Username atau password salah!";
             }
         }
     }
 
     public static void clearScreen() {
-        try {
-            if (System.getProperty("os.name").contains("Windows")) {
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            } else {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
-            }
-        } catch (Exception e) {
-            System.out.println("Tidak bisa membersihkan layar.");
-        }
+        for (int i = 0; i < 50; i++) System.out.println();
     }
 
     public static void printHeader(String title, String emoji) {
-        int width = 38;
+        int width = 40;
         String fullTitle = emoji + " " + title;
-        int padding = (width - fullTitle.length()) / 2;
+        int spaceTotal = width - 2 - fullTitle.length();
+        int spaceLeft  = spaceTotal / 2;
+        int spaceRight = spaceTotal - spaceLeft;
+
         System.out.println("=".repeat(width));
-        System.out.printf("|%" + (padding + fullTitle.length()) + "s%" + (width - padding - fullTitle.length()) + "s|\n", fullTitle, "");
+        System.out.print("|"
+                + " ".repeat(spaceLeft)
+                + fullTitle
+                + " ".repeat(spaceRight)
+                + "|\n");
         System.out.println("=".repeat(width));
     }
 
