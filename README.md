@@ -150,7 +150,8 @@ Penjelasan.
 </p>
 
 # BELI SBN
-![Beli SBN](https://github.com/user-attachments/assets/59a584b8-d405-4f65-8096-a90e7298361a)
+![Beli SBN](https://github.com/user-attachments/assets/f3d990fa-3a05-4118-b9a8-83127e861a23)
+
 
 
 <p align="justify">
@@ -166,7 +167,7 @@ Penjelasan.
 </p>
 
 # PORTOFOLIO
-![Portofolio](https://github.com/user-attachments/assets/8c0117c5-1e6a-4cf8-b8a7-1c9879bd1720)
+![Portofolio](https://github.com/user-attachments/assets/faecfe53-786c-4886-b116-64b8d37c891c)
 
 
 <p align="justify">
