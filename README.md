@@ -67,103 +67,116 @@ Pengembangan program ini menggunakan konsep-konsep dasar dari Object Oriented Pr
 Di bawah ini adalah contoh implementasi program investasi saham dan surat berharga negara (SBN) lengkap dengan hasil tangkapan layar. Penjelasan mengenai cara kerja kode dapat ditemukan di bawah ini.
 
 # LOGIN PAGE
-![Login Page](https://github.com/user-attachments/assets/947fa72f-c141-42b9-87a7-31e6e116187c)
-![Login Admin](https://github.com/user-attachments/assets/41bf7d13-a3e5-4be5-bbeb-c06f4729c78c)
-![Login Customer](https://github.com/user-attachments/assets/3a345ce9-646a-466a-a818-289fa93c524c)
+![Login Admin](https://github.com/user-attachments/assets/bf869c5b-b3e7-4acb-a9e1-bbf4a138fd26)
+
+![Login Customer](https://github.com/user-attachments/assets/33e41962-9afc-43a2-a286-2bc6765393be)
+
 
 <p align="justify">
-Setelah user memilih melaukan login, user akan diminta untuk menginputkan username dan password meereka. Jika benar maka akan mengeluarkan output seperti gambar di atas, bila salah maka user akan keluar perintah untuk memberikan user dan password yang benar lalu user kembali diminta untuk memilih login atau keluar, seperti gambar di atas.
+Penjelasan.
 </p>
 
 # MENU ADMIN
-![Menu Admin](https://github.com/user-attachments/assets/d129c818-3b94-40be-a2b6-b1743b88ef47)
+![Menu Admin](https://github.com/user-attachments/assets/9197c579-454a-4139-b3e7-8e23e56cb7c1)
+
 
 <p align="justify">
-Setelah melakukan login sebagai administrator, maka user akan diberi intruksi pada menu admin seperti gambar di atas. Admin akan diminta untuk memilih opsi di atas dengan menginputkan angka
+Penjelasan.
 </p>
 
-# MENU ADMIN SAHAM
-![Menu Admin Saham](https://github.com/user-attachments/assets/41e04ed5-6997-4177-9f87-04df7249c1d5)
+# MENU ADMIN KELOLA SAHAM
+![Menu Admin Kelola Saham](https://github.com/user-attachments/assets/b1d5f90c-fbe9-4948-b11e-85745a0e33f4)
+
 
 <p align="justify">
-Jika admin memilih Saham pada menu admin, maka administrator akan diberi instruksi pada menu admin Saham sperti gambar di atas. Admin akan diminta untuk memilih opsi di atas dengan menginputkan angka
+Penjelasan.
 </p>
 
 # TAMBAH SAHAM
-![Menu Tambah Saham Admin](https://github.com/user-attachments/assets/de64c833-f4d5-42f9-b3fc-2f8179abc80b)
+![Tambah Saham](https://github.com/user-attachments/assets/b2f3f312-f837-43e4-859f-e863b36bc691)
+
 
 <p align="justify">
-Admin bisa menambahkan saham dengan menambahkan kode saham, nama perusahaan dan Harga saham pada gamba di atas. Jika berhasil menambahkan, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
 # UBAH HARGA SAHAM
-![Menu Ubah Harga Saham Admin](https://github.com/user-attachments/assets/3c493754-a19b-479a-ac74-d22b66791ee5)
+![Ubah Harga Saham](https://github.com/user-attachments/assets/287b65b3-b03b-47f4-a3b1-193d3760c634)
+
 
 <p align="justify">
-Admin bisa mengubah harga saham dari list daftar saham yang sudah ada pada gambar di atas. Setelah memilih saham yang ada, admin perlu menginput harga saham yang baru. Jika berhasil mengubah, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
-# MENU ADMIN SBN
-![Menu Admin SBN](https://github.com/user-attachments/assets/f120378e-e612-4964-923c-a134d6fa3f9f)
+# MENU ADMIN KELOLA SBN
+![Menu Admin Kelola SBN](https://github.com/user-attachments/assets/3cc82507-54e6-4904-8a4f-8afbd26acb63)
+
 
 <p align="justify">
-Jika admin memilih Saham pada menu admin, maka administrator akan diberi instruksi pada menu admin Saham sperti gambar di atas. Admin akan diminta untuk memilih opsi di atas dengan menginputkan angka
+Penjelasan.
 </p>
 
 # TAMBAH SBN
-![Menu Tambah SBN Admin](https://github.com/user-attachments/assets/40548281-91f1-41ea-8f08-14f04ff3def6)
+![Tambah SBN](https://github.com/user-attachments/assets/ff7c5ae0-3221-4153-a64b-583b5247fba4)
+
+
 
 <p align="justify">
-Admin bisa menambahkan SBN dengan menginput nama SBN, bunga per tahun, jangka wakktu, jatuh tempo dan kuota nasional seperti pada gambar di atas. Jika berhasil menambahkan, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
 # MENU CUSTOMER
-![Customer Menu](https://github.com/user-attachments/assets/3269f691-3971-4914-bf8b-71926b8260c9)
+![Menu Customer](https://github.com/user-attachments/assets/81445c4b-d2f7-4445-a789-31b131f6a988)
+
 
 <p align="justify">
-Setelah melakukan login sebagai customer, maka user akan diberi instruksi pada menu customer seperti gambar di atas. Customer akan diminta untuk memilih opsi di atas dengan menginputkan angka
+Penjelasan.
 </p>
 
 # BELI SAHAM
-![Beli Saham](https://github.com/user-attachments/assets/d431c1d9-4d18-4870-b0de-95647a3301e9)
+![Beli Saham](https://github.com/user-attachments/assets/bb69757b-899a-488d-b15d-5fdb9a4e6560)
+
 
 <p align="justify">
-Customer bisa membeli saham dari list daftar saham yang tersedia seperti pada gambar di atas. Setelah memilih saham yang ingin dibeli, customer perlu memilih jumlah lembar yang ingin dibeli.  Jika berhasil membeli, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
 # JUAL SAHAM
-![Jual Saham](https://github.com/user-attachments/assets/03456afc-a152-4622-9608-26002e56b970)
+![Jual Saham](https://github.com/user-attachments/assets/23393acb-afc5-4e5f-b8a1-8af5aac16291)
+
 
 <p align="justify">
-Customer bisa menjual saham dari list daftar saham yang customer punya. Setelah memilih saham yang ingin dijual, customer perlu memilih jumlah lembar yang ingin dijual. Jika berhasil menjual, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
 # BELI SBN
-![Beli SBN](https://github.com/user-attachments/assets/8864f174-b708-458f-ad2f-b0d8add24965)
+![Beli SBN](https://github.com/user-attachments/assets/59a584b8-d405-4f65-8096-a90e7298361a)
+
 
 <p align="justify">
-Customer bisa membeli SBN dari list daftar SBN yang tersedia seperti pada gambar di atas. Setelah memilih SBN yang ingin dibeli, customer perlu menginput nominal pembelian yang ingin dibeli.  Jika berhasil membeli, maka akan terdapat pesan seperti gambar di atas
+Penjelasan.
 </p>
 
 # SIMULASI SBN
-![Simulasi SBN](https://github.com/user-attachments/assets/acc63edb-a31c-44f2-b44e-467d6a021626)
+![Simulasi SBN](https://github.com/user-attachments/assets/b7757984-16b2-4a2d-a9ee-c6f9e612a2f8)
+
 
 <p align="justify">
-Customer bisa melakukan simulasi SBN dari list daftar yang tersedia seperti pada gambar di atas. Setelah memilih SBN yang ingin disimulasi, customer perlu menginput nominal investasi yang diinginkan. Jika berhasil, maka akan terdapat hasil simulasi seperti gambar di atas
+Penjelasan.
 </p>
 
 # PORTOFOLIO
-![Portofolio](https://github.com/user-attachments/assets/12e74918-10b7-4e06-b741-6edb0b6a5056)
+![Portofolio](https://github.com/user-attachments/assets/8c0117c5-1e6a-4cf8-b8a7-1c9879bd1720)
+
 
 <p align="justify">
-Customer bisa melihat portofolionya sendiri seperti pada  gambar di atas. Terdapat daftar saham yang berisi total nilai pasar saham dan total pembelian saham. Serta, daftar SBN yang berisi total bunga bulanan yang sedang  dimiliki customer sekarang
+Penjelasan.
 </p>
 
 # LOGOUT
-![Keluar Program](https://github.com/user-attachments/assets/f89e1277-01fc-4a3a-94c6-34cdb6488053)
-![Logout Admin](https://github.com/user-attachments/assets/474fe8bc-cca3-455d-b73b-485c29774636)
-![Logout Customer](https://github.com/user-attachments/assets/19073b3f-a667-4a02-a5b7-d78fb2742606)
+![Logout](https://github.com/user-attachments/assets/2615785e-0d36-46a3-9e25-5826ac173192)
+
 
 <p align="justify">
-Setelah user memilih untuk melakukan logout maupun keluar dari program. Maka, program akan mengeluarka pesan seperti gambar di atas
+Penjelasan.
 </p>
