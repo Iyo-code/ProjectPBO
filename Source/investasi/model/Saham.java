@@ -14,7 +14,7 @@ public class Saham {
     public String getNamaPerusahaan() { return namaPerusahaan; }
     public double getHarga() { return harga; }
     public void setHarga(double harga) { this.harga = harga; }
-
+    
     @Override
     public String toString() {
         return String.format("%s - %s | Rp%.2f", kode, namaPerusahaan, harga);
