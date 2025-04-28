@@ -70,7 +70,6 @@ public class CustomerService {
     private void beliSaham() {
         clearScreen();
         printHeader("BELI SAHAM", "🛒");
-
         if (daftarSaham.isEmpty()) {
             System.out.println("Belum ada saham tersedia.");
             pause();
