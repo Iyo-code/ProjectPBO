@@ -11,7 +11,7 @@ public class Main {
 
         while (true) {
             clearScreen();
-            printHeader("APLIKASI INVESTASI CLI", "🟢");
+            printHeader("PROGRAM INVESTASI SAHAM DAN SBN", "🟢");
 
             if (!loginError.isEmpty()) {
                 System.out.println(loginError);
