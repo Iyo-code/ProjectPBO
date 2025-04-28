@@ -1,41 +1,67 @@
-# PBO_TUGAS-1
+# PBO_TUGAS1
 # PROGRAM INVESTASI SAHAM DAN SURAT BERHARGA NEGARA(SBN)
 
 <p align="justify">
-Halo! ini merupakan proyek kecil untuk melakukan investasi saham dan surat berharga negara(SBN) demi menuntaskan Tugas I PBO KAMI.
+Aplikasi ini dibuat untuk memenuhi Tugas 1 Pemrograman Berorientasi Objek (PBO) dengan konsep investasi sederhana.
 
-Program Java ini dirancang untuk dua jenis user dengan akses yang berbeda, yaitu:
+Dalam program ini dirancang untuk dua jenis user dengan akses yang berbeda, yaitu:
 
-  1. Admin diberikan akses untuk menambahkan dan mengubah harga saham, serta menambahkan surat berharga negara(SBN)
-  2. Customer diberikan akses untuk membeli saham, menjual saham, membeli SBN, simulasi SBN dan melihat portofolio sendiri
+* Admin dapat mengelola daftar Saham dan Surat Berharga Negara (SBN), termasuk menambahkan data baru dan mengubah harga saham.
+* Customer digambarkan sebagai investor, dengan fitur untuk membeli saham, menjual saham, membeli SBN, melakukan simulasi kupon, dan melihat portofolio investasi yang dimiliki.
      
-Program ini juga dilengkapi dengan input validasi pada class inputUtil untuk memastikan pengguna memberikan input yang sesuai dengan yang dibutuhkan oleh program.
+Seluruh interaksi pengguna dilakukan melalui tampilan terminal/console, dengan desain antarmuka sederhana namun terstruktur (menggunakan header dan clear screen setiap navigasi).
 
-Di bawah ini adalah deskripsi program, penjelasan dari bagaimana program akan dijalankan, dan UML dari program ini. Untuk deskripsi kode lebih lengkap dapat dilihat pada kode program yang sudah dicommit sebelumnya (sudah disertakan beberapa comment untuk membantu dalam mengerti cara kerja program).
+Program dilengkapi dengan sistem validasi input pada setiap form isian untuk mencegah kesalahan input dan menjaga konsistensi data.
+
+Struktur program memanfaatkan prinsip OOP (Object-Oriented Programming) sepenuhnya, seperti enkapsulasi data dalam model, pemisahan antara layanan service untuk admin dan customer, serta penggunaan class khusus untuk keperluan menu navigasi.
+
+Untuk deskripsi kode lebih rinci, sudah disediakan komentar pada setiap bagian penting kode.
 </p>
 
-# Identitas Kami
-* Nama  : I Komang Cahya Kertha Yasa
-  NIM   : 2405551034
-  Matkul: PBO (B)
+# Struktur Project
+* ├── investasi/
+    * ├── main/
+    * │   ├── Main.java
+    * │   ├── AdminMenu.java
+    * │   └── CustomerMenu.java
+    * ├── service/
+    * │   ├── AdminService.java
+    * │   └── CustomerService.java
+    * ├── model/
+    * │   ├── User.java
+    * │   ├── Saham.java
+    * │   └── SuratBerhargaNegara.java
 
-* Nama  : I Wayan Daffa Adhirajasa
-  NIM   : 2405551144
-  Matkul: PBO (B)
+# Indentitas Pemilik
+* Trio Suro Wibowo (2405551168)
+* I Made Agus Hendra Diwangga (2405551155)
 
 # UML
-![UML PBO](https://github.com/user-attachments/assets/b3531082-5d97-48e6-994b-5e5fb6aa081c)
+![UML PBO]()
+
+# FITUR UTAMA
+* Admin :
+    * Tambah Saham baru
+    * Ubah Harga Saham
+    * Tambah Surat Berharga Negara (SBN)
+
+* Customer :
+    * Beli Saham
+    * Jual Saham
+    * Beli SBN
+    * Simulasi Kupon SBN
+    * Melihat Portofolio Saham dan SBN
 
 # BAGAIMANA PROGRAM DIJALANKAN
 Pengembangan program ini menggunakan konsep-konsep dasar dari Object Oriented Programming yaitu:
 
-1. Penerapan Object dan Class.
-2. Penggunaan Alur Kontrol (Flow Control) While loop, for each loop, if, if-else dan switch case.
-3. Array list
-4. Nested Class
-5. Enscapsulasi
-6. Interface
-7. Override
+1. Penerapan Object dan Class pada semua komponen seperti Saham, SBN, User, AdminService, dan CustomerService.
+2. Penggunaan Alur Kontrol (Flow Control) seperti while loop untuk navigasi menu, for-each loop untuk menampilkan daftar, if-else untuk validasi, dan switch-case untuk pilihan menu.
+3. Penggunaan ArrayList untuk menyimpan data dinamis Saham dan Surat Berharga Negara.
+4. Implementasi relasi antar class (association, dependency, aggregation) antara AdminService, CustomerService, Saham, SBN, dan User.
+5. Penerapan Encapsulation dengan penggunaan modifier akses private pada atribut dan public pada method accessor.
+6. Penggunaan Override pada method-method penting seperti menu navigasi.
+7. Desain program modular dengan pemisahan menu, service, dan model.
 
 # PENGGUNAAN PROGRAM
 Di bawah ini adalah contoh implementasi program investasi saham dan surat berharga negara (SBN) lengkap dengan hasil tangkapan layar. Penjelasan mengenai cara kerja kode dapat ditemukan di bawah ini.
