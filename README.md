@@ -89,7 +89,7 @@ Program Investasi Saham dan SBN diatas, admin diberikan tiga pilihan utama, yait
 
 
 <p align="justify">
-menampilkan tampilan Menu Kelola Saham dalam program berbasis teks, yang merupakan bagian dari fitur admin di Program Investasi Saham dan SBN. Menu ini menawarkan tiga opsi utama kepada admin, yaitu Tambah Saham untuk menambahkan data saham baru ke dalam sistem, Ubah Harga Saham untuk memperbarui harga saham yang sudah ada, dan Kembali untuk kembali ke menu admin utama. Tata letak menu dibuat menggunakan garis ASCII sebagai pemisah, membuat tampilannya lebih terstruktur dan mudah dipahami
+Menampilkan tampilan Menu Kelola Saham dalam program berbasis teks, yang merupakan bagian dari fitur admin di Program Investasi Saham dan SBN. Menu ini menawarkan tiga opsi utama kepada admin, yaitu Tambah Saham untuk menambahkan data saham baru ke dalam sistem, Ubah Harga Saham untuk memperbarui harga saham yang sudah ada, dan Kembali untuk kembali ke menu admin utama. Tata letak menu dibuat menggunakan garis ASCII sebagai pemisah, membuat tampilannya lebih terstruktur dan mudah dipahami
 </p>
 
 # TAMBAH SAHAM
@@ -155,7 +155,7 @@ Gambar di atas menampilkan antarmuka teks untuk fitur Jual Saham dalam sebuah ap
 
 
 <p align="justify">
-menampilkan antarmuka berbasis teks untuk fitur Beli SBN (Surat Berharga Negara) dalam sebuah aplikasi keuangan. Di sini tersedia satu produk, yaitu Obligasi Negara Ritel dengan bunga sebesar 6,65% dan kuota pembelian yang sangat besar. Pengguna diminta memilih produk SBN dengan memasukkan angka pilihan ("1") dan menentukan nominal pembelian (sebesar Rp10.000.000 dalam contoh ini). Setelah pembelian berhasil, sistem memberikan notifikasi sukses "SBN berhasil dibeli." lengkap dengan ikon centang hijau, lalu meminta pengguna untuk menekan ENTER agar bisa melanjutkan.
+Menampilkan antarmuka berbasis teks untuk fitur Beli SBN (Surat Berharga Negara) dalam sebuah aplikasi keuangan. Di sini tersedia satu produk, yaitu Obligasi Negara Ritel dengan bunga sebesar 6,65% dan kuota pembelian yang sangat besar. Pengguna diminta memilih produk SBN dengan memasukkan angka pilihan ("1") dan menentukan nominal pembelian (sebesar Rp10.000.000 dalam contoh ini). Setelah pembelian berhasil, sistem memberikan notifikasi sukses "SBN berhasil dibeli." lengkap dengan ikon centang hijau, lalu meminta pengguna untuk menekan ENTER agar bisa melanjutkan.
 </p>
 
 # SIMULASI SBN
