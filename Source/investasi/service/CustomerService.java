@@ -226,7 +226,6 @@ public class CustomerService {
         System.out.printf("Total Kupon/bulan: Rp%.2f%n", totalKupon);
         pause();
     }
-
     private void pause() {
         System.out.println("\nTekan ENTER untuk melanjutkan...");
         scanner.nextLine();
