@@ -13,11 +13,9 @@ public class AdminMenu {
         AdminService service = new AdminService(daftarSaham, daftarSBN);
         service.menuAdmin();
     }
-
     public static ArrayList<Saham> getDaftarSaham() {
         return daftarSaham;
     }
-
     public static ArrayList<SuratBerhargaNegara> getDaftarSBN() {
         return daftarSBN;
     }
