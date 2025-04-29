@@ -73,7 +73,7 @@ Di bawah ini adalah contoh implementasi program investasi saham dan surat berhar
 
 
 <p align="justify">
-Program Investasi Saham dan SBN ini punya dua jenis akun: admin dan customer. Admin (login: admin/admin123) bisa ngatur data investasi, pengguna, dan sistem. Sementara customer (login: customer/cust123) cuma bisa investasi dan cek portofolio mereka.
+Tampilan login menampilkan dua akun akses yaitu admin dengan username admin dan password admin123 serta customer dengan username customer dan password cust123 yang ditampilkan secara terpisah agar memudahkan pengguna dalam memilih peran saat masuk ke dalam aplikasi.
 </p>
 
 # MENU ADMIN
@@ -81,7 +81,7 @@ Program Investasi Saham dan SBN ini punya dua jenis akun: admin dan customer. Ad
 
 
 <p align="justify">
-Program Investasi Saham dan SBN diatas, admin diberikan tiga pilihan utama, yaitu Kelola Saham, Kelola SBN, dan Logout. Menu ini dibuat dengan tampilan sederhana menggunakan garis ASCII sebagai pembatas agar terlihat lebih rapi dan terstruktur. Fitur "Kelola Saham" memungkinkan admin untuk mengatur data terkait investasi saham, "Kelola SBN" untuk mengatur investasi Surat Berharga Negara, sedangkan opsi "Logout" digunakan untuk keluar dari sistem dan mengakhiri sesi admin. 
+Tampilan menu admin terdiri dari tiga pilihan utama yaitu Kelola Saham untuk menambahkan atau mengubah data saham Kelola SBN untuk menambahkan surat berharga negara dan Logout untuk keluar dari sesi admin.
 </p>
 
 # MENU ADMIN KELOLA SAHAM
@@ -89,7 +89,7 @@ Program Investasi Saham dan SBN diatas, admin diberikan tiga pilihan utama, yait
 
 
 <p align="justify">
-Menampilkan tampilan Menu Kelola Saham dalam program berbasis teks, yang merupakan bagian dari fitur admin di Program Investasi Saham dan SBN. Menu ini menawarkan tiga opsi utama kepada admin, yaitu Tambah Saham untuk menambahkan data saham baru ke dalam sistem, Ubah Harga Saham untuk memperbarui harga saham yang sudah ada, dan Kembali untuk kembali ke menu admin utama. Tata letak menu dibuat menggunakan garis ASCII sebagai pemisah, membuat tampilannya lebih terstruktur dan mudah dipahami
+Tampilan menu admin kelola saham berisi tiga opsi yaitu Tambah Saham untuk memasukkan data saham baru Ubah Harga Saham untuk memperbarui harga saham yang sudah ada dan Kembali untuk kembali ke menu utama admin.
 </p>
 
 # TAMBAH SAHAM
@@ -97,7 +97,7 @@ Menampilkan tampilan Menu Kelola Saham dalam program berbasis teks, yang merupak
 
 
 <p align="justify">
-Admin memilih opsi Tambah Saham (pilihan 1), lalu mengisi detail saham seperti Kode Saham (BBCA), Nama Perusahaan (Bank Central Asia), dan Harga Saham (3500). Setelah data dimasukkan, sistem menampilkan notifikasi dengan tanda centang hijau yang menyatakan bahwa "Saham berhasil ditambahkan!" sebagai tanda bahwa proses input berjalan sukses. Di bagian bawah, terdapat instruksi untuk menekan ENTER guna melanjutkan ke proses atau menu berikutnya, mempertahankan interaksi berbasis teks yang sederhana dan terarah.
+Tampilan tambah saham memungkinkan admin untuk memasukkan kode saham nama perusahaan dan harga saham kemudian sistem akan menampilkan notifikasi bahwa data saham berhasil ditambahkan sebelum kembali ke menu sebelumnya.
 </p>
 
 # UBAH HARGA SAHAM
@@ -105,7 +105,7 @@ Admin memilih opsi Tambah Saham (pilihan 1), lalu mengisi detail saham seperti K
 
 
 <p align="justify">
-Admin memilih opsi Ubah Harga Saham (pilihan 2). Sistem kemudian menampilkan daftar saham yang tersedia, salah satunya adalah BBCA - Bank Central Asia dengan harga awal Rp3500.00. Admin memilih saham yang ingin diubah (pilihan 1) dan memasukkan harga baru sebesar 4000. Setelah itu, sistem memberikan konfirmasi dengan tanda centang hijau yang menyatakan bahwa "Harga saham diperbarui!", diikuti instruksi untuk menekan ENTER agar melanjutkan ke tahap berikutnya.
+Tampilan ubah harga saham memungkinkan admin memilih salah satu saham dari daftar yang tersedia kemudian memasukkan harga baru yang diinginkan dan sistem akan menampilkan notifikasi bahwa harga saham berhasil diperbarui.
 </p>
 
 # MENU ADMIN KELOLA SBN
@@ -113,7 +113,7 @@ Admin memilih opsi Ubah Harga Saham (pilihan 2). Sistem kemudian menampilkan daf
 
 
 <p align="justify">
-Menu ini menawarkan dua pilihan utama, yaitu Tambah SBN untuk menambahkan data SBN baru ke dalam sistem, dan Kembali untuk kembali ke menu admin utama. Desain menu menggunakan format berbasis teks dengan garis-garis ASCII sebagai pembatas untuk menjaga kerapihan tampilan, sementara di bagian bawah terdapat prompt "Pilih:" yang menunggu input pilihan dari admin untuk menentukan langkah selanjutnya.
+Tampilan kelola SBN memungkinkan admin untuk mengakses menu pengelolaan Surat Berharga Negara, di mana tersedia dua pilihan yaitu menambahkan data SBN baru atau kembali ke menu sebelumnya. Admin akan diminta memilih salah satu opsi, dan sistem akan mengeksekusi tindakan sesuai dengan pilihan yang dipilih.
 </p>
 
 # TAMBAH SBN
@@ -122,7 +122,7 @@ Menu ini menawarkan dua pilihan utama, yaitu Tambah SBN untuk menambahkan data S
 
 
 <p align="justify">
-Admin memilih opsi Tambah SBN (pilihan 1) lalu mengisi data penting seperti Nama SBN (Obligasi Negara Ritel), Bunga (%) (6.65), Jangka Waktu (36 bulan), Tanggal Jatuh Tempo (2025-10-15), dan Kuota Nasional (10000000000000). Setelah semua data diinput, sistem mengonfirmasi bahwa SBN berhasil ditambahkan dengan tanda centang hijau, serta menampilkan pesan untuk menekan ENTER agar dapat melanjutkan ke proses berikutnya. Tampilan ini menggunakan format teks sederhana dengan pembatas ASCII agar tetap terstruktur dan mudah dibaca.
+Tampilan tambah SBN memungkinkan admin untuk menginput data SBN baru dengan mengisi beberapa informasi seperti nama SBN, tingkat bunga, jangka waktu dalam bulan, tanggal jatuh tempo, dan kuota nasional. Setelah semua data diinputkan dengan benar, sistem akan menampilkan notifikasi bahwa SBN berhasil ditambahkan ke dalam daftar, dan meminta admin menekan ENTER untuk melanjutkan ke proses berikutnya.
 </p>
 
 # MENU CUSTOMER
@@ -130,7 +130,7 @@ Admin memilih opsi Tambah SBN (pilihan 1) lalu mengisi data penting seperti Nama
 
 
 <p align="justify">
-Menu ini menawarkan beberapa pilihan kepada pengguna, yaitu: membeli saham, menjual saham, membeli Surat Berharga Negara (SBN), melakukan simulasi investasi SBN, melihat portofolio investasi, dan logout dari akun.
+Tampilan menu customer menyediakan berbagai pilihan bagi pengguna untuk mengelola aktivitas investasinya. Dalam menu ini, customer dapat membeli saham, menjual saham, membeli SBN, melakukan simulasi investasi SBN, melihat portofolio, serta keluar dari sistem. Sistem akan meminta customer untuk memilih salah satu opsi dengan memasukkan nomor sesuai daftar yang ditampilkan.
 </p>
 
 # BELI SAHAM
@@ -138,7 +138,7 @@ Menu ini menawarkan beberapa pilihan kepada pengguna, yaitu: membeli saham, menj
 
 
 <p align="justify">
-Gambar di atas menunjukkan tampilan antarmuka teks untuk fitur Beli Saham dalam sebuah aplikasi investasi. Di sini, tersedia opsi untuk membeli saham BBCA (Bank Central Asia) dengan harga Rp4000,00 per lembar. Pengguna diminta memilih saham dengan memasukkan angka pilihan (dalam contoh ini "1") dan menentukan jumlah lembar yang ingin dibeli (sebanyak "1000" lembar). Setelah input dilakukan, sistem menampilkan notifikasi sukses yang ditandai dengan ikon centang dan pesan "Saham berhasil dibeli." Terakhir, pengguna diarahkan untuk menekan ENTER guna melanjutkan ke proses berikutnya.
+Tampilan beli saham memungkinkan customer memilih salah satu saham dari daftar yang tersedia berdasarkan nomor urut, lalu memasukkan jumlah lembar saham yang ingin dibeli. Setelah proses pembelian berhasil, sistem akan menampilkan notifikasi bahwa saham telah berhasil dibeli dan meminta customer menekan ENTER untuk melanjutkan.
 </p>
 
 # JUAL SAHAM
@@ -146,7 +146,7 @@ Gambar di atas menunjukkan tampilan antarmuka teks untuk fitur Beli Saham dalam 
 
 
 <p align="justify">
-Gambar di atas menampilkan antarmuka teks untuk fitur Jual Saham dalam sebuah aplikasi investasi. Pada tampilan ini, pengguna memiliki saham Bank Central Asia sebanyak 1000 lembar, dan diminta untuk memilih saham yang ingin dijual dengan memasukkan nomor pilihan ("1") serta menentukan jumlah lembar yang akan dijual (sebanyak "100" lembar). Setelah transaksi dikonfirmasi, sistem menampilkan pesan sukses "Saham berhasil dijual." dengan ikon centang hijau. Proses ini diakhiri dengan instruksi untuk menekan ENTER agar pengguna dapat melanjutkan.
+Tampilan jual saham memungkinkan customer memilih saham yang dimiliki dari daftar portofolio, lalu memasukkan jumlah lembar saham yang ingin dijual. Setelah transaksi dilakukan, sistem akan menampilkan notifikasi bahwa saham telah berhasil dijual dan meminta customer menekan ENTER untuk melanjutkan proses.
 </p>
 
 # BELI SBN
@@ -155,7 +155,7 @@ Gambar di atas menampilkan antarmuka teks untuk fitur Jual Saham dalam sebuah ap
 
 
 <p align="justify">
-Menampilkan antarmuka berbasis teks untuk fitur Beli SBN (Surat Berharga Negara) dalam sebuah aplikasi keuangan. Di sini tersedia satu produk, yaitu Obligasi Negara Ritel dengan bunga sebesar 6,65% dan kuota pembelian yang sangat besar. Pengguna diminta memilih produk SBN dengan memasukkan angka pilihan ("1") dan menentukan nominal pembelian (sebesar Rp10.000.000 dalam contoh ini). Setelah pembelian berhasil, sistem memberikan notifikasi sukses "SBN berhasil dibeli." lengkap dengan ikon centang hijau, lalu meminta pengguna untuk menekan ENTER agar bisa melanjutkan.
+Tampilan beli SBN memungkinkan customer memilih salah satu jenis Surat Berharga Negara dari daftar yang tersedia, kemudian memasukkan nominal pembelian yang diinginkan. Setelah proses transaksi berhasil, sistem akan menampilkan notifikasi bahwa SBN telah berhasil dibeli dan meminta customer untuk menekan ENTER guna melanjutkan ke tahap berikutnya.
 </p>
 
 # SIMULASI SBN
@@ -163,7 +163,7 @@ Menampilkan antarmuka berbasis teks untuk fitur Beli SBN (Surat Berharga Negara)
 
 
 <p align="justify">
-Simulasi ini menampilkan hasil estimasi pendapatan dari investasi di Obligasi Negara Ritel dengan nilai investasi sebesar Rp10.000.000,00. Berdasarkan simulasi, investor akan menerima kupon bulanan sebesar Rp49.875,00. Setelah informasi ditampilkan, sistem meminta pengguna untuk menekan ENTER agar dapat melanjutkan ke tahap berikutnya.
+Tampilan simulasi SBN menampilkan hasil simulasi berdasarkan jenis Surat Berharga Negara yang telah dipilih dan nominal investasi yang dimasukkan oleh customer. Dalam tampilan ini, sistem menampilkan jenis SBN yaitu Obligasi Negara Ritel, beserta nilai investasi sebesar Rp10.000.000,00 dan estimasi kupon yang akan diterima setiap bulan sebesar Rp49.875,00.
 </p>
 
 # PORTOFOLIO
@@ -171,7 +171,7 @@ Simulasi ini menampilkan hasil estimasi pendapatan dari investasi di Obligasi Ne
 
 
 <p align="justify">
-Dalam portofolio ini, pengguna memiliki saham Bank Central Asia sebanyak 900 lembar dengan harga per lembar Rp4000,00, sehingga total nilai pasar saham mencapai Rp3.600.000,00. Selain saham, pengguna juga memiliki investasi di Obligasi Negara Ritel dengan nominal Rp10.000.000,00 yang menghasilkan kupon bulanan sebesar Rp49.875,00. Seluruh informasi ringkas ini membantu pengguna memantau nilai investasinya secara langsung sebelum diarahkan untuk menekan ENTER guna melanjutkan.
+Tampilan portofolio menampilkan ringkasan investasi yang dimiliki customer, terdiri dari saham dan SBN. Pada bagian saham, ditampilkan kepemilikan saham Bank Central Asia sebanyak 900 lembar dengan total nilai pasar sebesar Rp3.600.000,00. Sementara pada bagian SBN, ditampilkan investasi pada Obligasi Negara Ritel senilai Rp10.000.000,00 dengan kupon bulanan sebesar Rp49.875,00.
 </p>
 
 # LOGOUT
@@ -179,5 +179,5 @@ Dalam portofolio ini, pengguna memiliki saham Bank Central Asia sebanyak 900 lem
 
 
 <p align="justify">
-Gambar diatas merupakan tampilan setelah logout, yang dimana setelah logout pengguna akan otomatis kembali ke menu awal.
+Tampilan diatas merupakan tampilan setelah logout, yang dimana setelah logout pengguna akan otomatis kembali ke menu awal.
 </p>
