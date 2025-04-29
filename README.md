@@ -73,7 +73,7 @@ Di bawah ini adalah contoh implementasi program investasi saham dan surat berhar
 
 
 <p align="justify">
-Program Investasi Saham dan SBN diatas menyediakan dua jenis akun, yaitu admin dan customer, masing-masing dengan username dan password yang sudah ditentukan (admin/admin123 untuk admin dan customer/cust123 untuk customer). Admin kemungkinan memiliki hak akses untuk mengelola data investasi, pengguna, dan pengaturan sistem, sedangkan customer hanya memiliki akses untuk melakukan investasi dan melihat portofolio mereka. 
+Program Investasi Saham dan SBN ini punya dua jenis akun: admin dan customer. Admin (login: admin/admin123) bisa ngatur data investasi, pengguna, dan sistem. Sementara customer (login: customer/cust123) cuma bisa investasi dan cek portofolio mereka.
 </p>
 
 # MENU ADMIN
